@@ -16,6 +16,6 @@ app.get('/', function (req,res) {
 
 app.get
 
-app.listen(8080, function (req,res) {
-  console.log("running on port 8080 ")
-})
+
+app.listen(process.env.PORT || 3000, 
+	() => console.log("Server is running..."));
